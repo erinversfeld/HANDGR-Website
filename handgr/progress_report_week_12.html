@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#ScrollSpy" data-offset="15">
     <div id="navbar"></div>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
@@ -46,7 +46,18 @@
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <nav class="col-sm-3" id="ScrollSpy">
+                    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+                        <h3 class="section-heading">Resources</h3>
+                        <h3>Minutes</h3>
+                        <li><a href="minutes/21_June_9am.pdf">21 June, 9 am</a></li>
+                        <li><a href="minutes/21_June_130pm.pdf">21 June, 1.30 pm</a></li>
+                        <h3>Reports</h3>
+                        <li><a href="minutes/19_June.pdf">19 June</a></li>
+                        <li><a href="minutes/23_June.pdf">23 June</a></li>
+                    </ul>
+                </nav>
+                <div class="col-sm-9">
                     <h2 class="section-heading">Progress</h2>
 
                         <p> The team has now completed their project proposal and is busy with compiling the revised document based on feedback received in their presentation. They have begun piloting their data gathering process. The focus from here will be on obtaining ethical clearance from the department so that they can begin compiling the project's dataset.</p>
@@ -98,8 +109,6 @@
                             <a href="progress_report_week_13.html">Next report &rarr;</a>
                         </li>
                     </ul>
-
-
                 </div>
             </div>
         </div>
