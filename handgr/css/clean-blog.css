@@ -3,10 +3,14 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
+html, body {
+  width:100%;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #333333;
+  position: absolute;
+  margin: 0;
+  height: 100%;
 }
 p {
   line-height: 1.5;
@@ -39,11 +43,14 @@ blockquote {
   color: #777777;
   font-style: italic;
 }
+hr {
+  border-color: rgb(0, 153, 153, 0.4);
+}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: white;
+  border-color: rgb(0, 153, 153, 0.4);
 }
 .navbar-custom {
   position: absolute;
