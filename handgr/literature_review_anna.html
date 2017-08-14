@@ -71,7 +71,7 @@ Over the last several years, the scene of the hand gesture recognition field has
 
                     </p>
                     <p>
-A wide selection of research about the LMC in relation to sign language recognition is available. The LMC has been used to recognise several sign languages, including Greek Sign Language (GSL) \cite{simos2016greek}, Arabic Sign Language (ArSL) \cite{elons2014arabic,mohandes2014arabic,mohandes2015prototype}, Chinese Sign Languages \cite{zhang2016chinese}, American Sign Language (ASL) \cite{chuan2014american,funasaka2015sign,marin2014hand,marin2016hand,mapari2016american}, and South African Sign Language (SASL) \cite{seymour2015mobile}. Most studies have focused on fingerspelling, as this does not usually require arm movement or facial expressions, so these similarities are assumed to be enough to allow a meaningful comparison.
+A wide selection of research about the LMC in relation to sign language recognition is available. The LMC has been used to recognise several sign languages, including Greek Sign Language (GSL) [<a href="literature_review_anna.html#ref19">19</a>], Arabic Sign Language (ArSL) [<a href="literature_review_anna.html#ref8">8</a>, <a href="literature_review_anna.html#ref14">14</a>, <a href="literature_review_anna.html#ref15">15</a>], Chinese Sign Languages [<a href="literature_review_anna.html#ref23">23</a>], American Sign Language (ASL) [<a href="literature_review_anna.html#ref5">5</a>, <a href="literature_review_anna.html#ref9">9</a>, <a href="literature_review_anna.html#ref12">12</a>, <a href="literature_review_anna.html#ref13">13</a>, <a href="literature_review_anna.html#ref11">11</a>], and South African Sign Language (SASL) [<a href="literature_review_anna.html#ref18">18</a>]. Most studies have focused on fingerspelling, as this does not usually require arm movement or facial expressions, so these similarities are assumed to be enough to allow a meaningful comparison.
 
                     </p>
                     <p>
@@ -81,13 +81,13 @@ Section 2 will give an overview of sign language recognition using the LMC, then
                     <p>
 
 
-The LMC is a depth based hand recognition tool. Its API provides some predefined gestures, and outputs a set of features, but no raw depth map data \cite{potter2013leap}. This simplifies testing, but LMC's own recognition software has problems, as described by Potter et al. \cite{potter2013leap}. Most importantly for the scope of fingerspelling, the Leap software struggles with representing the hand accurately when some fingers are obscured, or if two fingers are too close to one another \cite{potter2013leap}. It is not clear whether Orion (LMC software update) addresses these issues. A broader problem with using the LMC for SLR is that it does not recognise facial expressions which is extremely important for sign language users \cite{bhuvan2016detection,huenerfauth2011evaluating,von2008significance}. It is possible that the first problem may be remedied by facing the LMC more directly to the gestures, either by moving the device or by facing the gestures towards the camera. Mohandes et al. \cite{mohandes2015prototype} used two perpendicular LMC devices, however the performance was not increased drastically when compared to other approaches.
+The LMC is a depth based hand recognition tool. Its API provides some predefined gestures, and outputs a set of features, but no raw depth map data [<a href="literature_review_anna.html#ref16">16</a>]. This simplifies testing, but LMC's own recognition software has problems, as described by Potter et al. [<a href="literature_review_anna.html#ref16">16</a>]. Most importantly for the scope of fingerspelling, the Leap software struggles with representing the hand accurately when some fingers are obscured, or if two fingers are too close to one another [<a href="literature_review_anna.html#ref16">16</a>]. It is not clear whether Orion (LMC software update) addresses these issues. A broader problem with using the LMC for SLR is that it does not recognise facial expressions which is extremely important for sign language users [<a href="literature_review_anna.html#ref2">2</a>, <a href="literature_review_anna.html#ref10">10</a>. <a href="literature_review_anna.html#ref7">7</a>, <a href="literature_review_anna.html#ref22">22</a>]. It is possible that the first problem may be remedied by facing the LMC more directly to the gestures, either by moving the device or by facing the gestures towards the camera. Mohandes et al. [<a href="literature_review_anna.html#ref15">15</a>] used two perpendicular LMC devices, however the performance was not increased drastically when compared to other approaches.
 
                     </p>
                     <h5>Use of Machine Learning</h5>
                     <p>
 
-The use of machine learning helps overcome several difficulties. For example, it can help with some shortfalls of the LMC, it can handle the complex and numerous sign language gestures \cite{clark2016system}, and it can handle with the different ways people repeat a particular sign \cite{mohandes2014arabic}. Because of the necessity of using machine learning for the present task, this paper will only review classification algorithms based on machine learning.
+The use of machine learning helps overcome several difficulties. For example, it can help with some shortfalls of the LMC, it can handle the complex and numerous sign language gestures [<a href="literature_review_anna.html#ref6">6</a>], and it can handle with the different ways people repeat a particular sign [<a href="literature_review_anna.html#ref14">14</a>]. Because of the necessity of using machine learning for the present task, this paper will only review classification algorithms based on machine learning.
 
                     </p>
                     <h4>Results</h4>
@@ -106,37 +106,37 @@ In the literature, most of the machine learning has been focused on the classifi
                     <h6>Support Vector Machines (SVM)</h6>
                     <p>
 
-This is the most popular algorithm in the literature for classification of the gestures \cite{cheng2016survey}. The SVM algorithm finds a hyperplane that separates two classes cleanly, and with as much margin as possible \cite{ben2010user}. The SVM method is successful for both static and dynamic gestures \cite{cheng2016survey}. This method was used by Chuan, Marin, and Simos, and they all found accuracies ranging from 79% - 99%. Quesada et al. found similar accuracies to Chuan et al. \cite{quesada2017automatic}, however they did not state an overall accuracy of their proposed system.
+This is the most popular algorithm in the literature for classification of the gestures [<a href="literature_review_anna.html#ref4">4</a>]. The SVM algorithm finds a hyperplane that separates two classes cleanly, and with as much margin as possible [<a href="literature_review_anna.html#ref1">1</a>]. The SVM method is successful for both static and dynamic gestures [<a href="literature_review_anna.html#ref4">4</a>]. This method was used by Chuan, Marin, and Simos, and they all found accuracies ranging from 79% - 99%. Quesada et al. found similar accuracies to Chuan et al. [<a href="literature_review_anna.html#ref17">17</a>], however they did not state an overall accuracy of their proposed system.
 
                     </p>
                     <h6>Neural Networks (ANN)</h6>
                     <p>
-The multi layer processor (MLP) neural network, in this case, takes features as input, processes them in a hidden layer, and outputs decisions \cite{delashmit2005recent}. The MLP method is more successful with static gestures than dynamic \cite{cheng2016survey}. This method was used by Mohandes, Elons, and Mapari, and accuracies ranging from 82% - 99% were found.
+The multi layer processor (MLP) neural network, in this case, takes features as input, processes them in a hidden layer, and outputs decisions [<a href="literature_review_anna.html#ref7">7</a>]. The MLP method is more successful with static gestures than dynamic [<a href="literature_review_anna.html#ref4">4</a>]. This method was used by Mohandes, Elons, and Mapari, and accuracies ranging from 82% - 99% were found.
 
                     </p>
                     <h4>k-Nearest Neighbour (kNN)</h4>
                     <p>
-The kNN algorithm uses the Euclidean distance between an instance and a class's attributes as a measure of similarity \cite{trigueiros2012comparison}. The kNN algorithm is good for both static and dynamic gestures \cite{cheng2016survey}. This was used by Chuan et al. and Clark et al. who achieved accuracies of 72.78% and 82.5% respectively.
+The kNN algorithm uses the Euclidean distance between an instance and a class's attributes as a measure of similarity [<a href="literature_review_anna.html#ref20">20</a>]. The kNN algorithm is good for both static and dynamic gestures [<a href="literature_review_anna.html#ref4">4</a>]. This was used by Chuan et al. and Clark et al. who achieved accuracies of 72.78% and 82.5% respectively.
 
                     </p>
                     <h6>Random Forests (RF)</h6>
                     <p>
-The RF algorithm uses a set of trees for prediction, where each tree depends on a vector sampled randomly from the same distribution \cite{breiman2001random}. This method is more successful with dynamic gestures than static gestures \cite{cheng2016survey}. Marin et al. got an accuracies from 57% to 94% using Random Forests, depending on what features were selected.
+The RF algorithm uses a set of trees for prediction, where each tree depends on a vector sampled randomly from the same distribution [<a href="literature_review_anna.html#ref3">3</a>]. This method is more successful with dynamic gestures than static gestures [<a href="literature_review_anna.html#ref4">4</a>]. Marin et al. got an accuracies from 57% to 94% using Random Forests, depending on what features were selected.
 
                     </p>
                     <h6>Naive Bayes Classifier (NBC)</h6>
                     <p>
-The NBC algorithm uses the Bayesian formula <img src="literature-review-anna-resources/nbcformula.svg" border="0"/> to predict the probability of an event happening, given other events and their probabilities \cite{mohandes2014arabic}. Mohandes et al. achieved about 98% accuracy using this method.
+The NBC algorithm uses the Bayesian formula <img src="literature-review-anna-resources/nbcformula.svg" border="0"/> to predict the probability of an event happening, given other events and their probabilities [<a href="literature_review_anna.html#ref14">14</a>]. Mohandes et al. achieved about 98% accuracy using this method.
 
                     </p>
                     <h6>Dempster-Shafer (DS)</h6>
                     <p>
-The DS algorithm generalises the Bayes algorithm by adding an uncertainty term, <i>&theta;</i> so the equation looks as follows: <img src="literature-review-anna-resources/nbcformula.svg" border="0"/> \cite{mohandes2015prototype}. Mohandes et al. achieved a 97.1% accuracy when combining the data from two LMCs at the classifier level using DS.
+The DS algorithm generalises the Bayes algorithm by adding an uncertainty term, <i>&theta;</i> so the equation looks as follows: <img src="literature-review-anna-resources/nbcformula.svg" border="0"/> [<a href="literature_review_anna.html#ref15">15</a>]. Mohandes et al. achieved a 97.1% accuracy when combining the data from two LMCs at the classifier level using DS.
 
                     </p>
                     <h6>Linear Discriminant Analysis (LDA)</h6>
                     <p>
-To ensure maximum class discrimination, the LDA algorithm decreases data dimensionality by using linear combinations of factors obtained from a projection matrix \cite{mohandes2015prototype}. Mohandes et al. achieved a 97.7% accuracy when combining the data from two LMCs before classification, and classifying using LDA.
+To ensure maximum class discrimination, the LDA algorithm decreases data dimensionality by using linear combinations of factors obtained from a projection matrix [<a href="literature_review_anna.html#ref15">15</a>]. Mohandes et al. achieved a 97.7% accuracy when combining the data from two LMCs before classification, and classifying using LDA.
 
                     </p>
                     <h5>Other variables</h5>
@@ -148,21 +148,21 @@ As seen in the previous section and Tables 1 and 2, a wide variety of accuracies
                     <h6>Feature Selection</h6>
                     <p>
 
-Trigueiros et al. analysed four classification algorithms using Kinect data \cite{trigueiros2012comparison}, and they found that the ANN had the best performance for the task of sign language recognition due to its high accuracy, and acceptable training time. However this result does not necessarily translate to Leap data, due to different methods of preprocessing.
+Trigueiros et al. analysed four classification algorithms using Kinect data [<a href="literature_review_anna.html#ref20">20</a>], and they found that the ANN had the best performance for the task of sign language recognition due to its high accuracy, and acceptable training time. However this result does not necessarily translate to Leap data, due to different methods of preprocessing.
 
                     </p>
                     <p>
-Marin et al. had interesting results when comparing three different feature selection algorithms: F-score (measure of how discriminative a factor is); Sequential (the feature whose addition achieves the greatest improvement in accuracy is added to the set, until the required number of features is reached); and Random forests. The best results were generally found with the sequential algorithm and the SVM classifier (reaching 95.8% with only 16 features). This result can be compared to Marin's earlier paper \cite{marin2014hand} which finds a somewhat lower accuracy of 91.28% (joint Leap and Kinect data) using 6 features.
+Marin et al. had interesting results when comparing three different feature selection algorithms: F-score (measure of how discriminative a factor is); Sequential (the feature whose addition achieves the greatest improvement in accuracy is added to the set, until the required number of features is reached); and Random forests. The best results were generally found with the sequential algorithm and the SVM classifier (reaching 95.8% with only 16 features). This result can be compared to Marin's earlier paper [<a href="literature_review_anna.html#ref12">12</a>] which finds a somewhat lower accuracy of 91.28% (joint Leap and Kinect data) using 6 features.
 
                     </p>
                     <p>
-Simos's feature sets control for hand size (boneTranslation) and hand location (palmTranslation) and both of these get very good results (about 99% accuracy). However, previous papers \cite{marin2014hand,marin2016hand} also adjust for these variables and do not get accuracies as high as Simos et al, even when keeping the classifier constant. This suggests that another variable is responsible for Simos's success, possibly the GSL gestures.
+Simos's feature sets control for hand size (boneTranslation) and hand location (palmTranslation) and both of these get very good results (about 99% accuracy). However, previous papers [<a href="literature_review_anna.html#ref12">12</a>, <a href="literature_review_anna.html#ref13">13</a>] also adjust for these variables and do not get accuracies as high as Simos et al, even when keeping the classifier constant. This suggests that another variable is responsible for Simos's success, possibly the GSL gestures.
 
                     </p>
                     <h6>Set up</h6>
                     <p>
 
-Quesada et al. explicitly compared two set ups of LMC experimentation \cite{quesada2017automatic}. One was the user-sensor set up, where the LMC lies flat on a surface, and the user tilts their gestures down towards the camera. The other was the user-user set up, which positioned the LMC underneath the gestures, but the gestures were facing the horizon (palm parallel to camera). The user-sensor set up did perform better, but surprisingly, the user-user set up also recognised a fair number of gestures, despite the problems with occlusion. Marin et al. \cite{marin2016hand,marin2014hand} tilted the hand forward towards the LMC, and Mapari et al. \cite{mapari2016american} tilted the LMC towards the palm. It is assumed other papers have a similar set up to assure minimal occlusion.
+Quesada et al. explicitly compared two set ups of LMC experimentation [<a href="literature_review_anna.html#ref17">17</a>]. One was the user-sensor set up, where the LMC lies flat on a surface, and the user tilts their gestures down towards the camera. The other was the user-user set up, which positioned the LMC underneath the gestures, but the gestures were facing the horizon (palm parallel to camera). The user-sensor set up did perform better, but surprisingly, the user-user set up also recognised a fair number of gestures, despite the problems with occlusion. Marin et al. [<a href="literature_review_anna.html#ref12">12</a>, <a href="literature_review_anna.html#ref13">13</a>] tilted the hand forward towards the LMC, and Mapari et al. [<a href="literature_review_anna.html#ref11">11</a>] tilted the LMC towards the palm. It is assumed other papers have a similar set up to assure minimal occlusion.
 
                     </p>
                     <p>
@@ -172,7 +172,7 @@ To overcome the problems of separating gestures, Quesada et al. tested the syste
                     <h6>Gesture selection</h6>
                     <p>
 
-The gestures analysed in the literature tend to be quite different from one another. ASL was the most frequently studied language, but even within that, the chosen gestures varied significantly. Most notably, Marin et al. chose only ten gestures (mostly) from the fingerspelling alphabet and the numerals, in no particular order. This means that the gestures chosen may be even less representative than just the fingerspelling alphabet. Indeed, the most confused gestures such as those for M, N, and T \cite{chuan2014american} were all missing from this data set.
+The gestures analysed in the literature tend to be quite different from one another. ASL was the most frequently studied language, but even within that, the chosen gestures varied significantly. Most notably, Marin et al. chose only ten gestures (mostly) from the fingerspelling alphabet and the numerals, in no particular order. This means that the gestures chosen may be even less representative than just the fingerspelling alphabet. Indeed, the most confused gestures such as those for M, N, and T [<a href="literature_review_anna.html#ref5">5</a>] were all missing from this data set.
 
                     </p>
                     <p>
@@ -184,30 +184,51 @@ The gestures analysed in the literature tend to be quite different from one anot
                     <p>
 
 
-Seymour et al. \cite{seymour2015mobile} implemented an Android sign language recognition using glove based input, and achieved an accuracy of 99%. The design of this application is loosely divided into data acquisition, gesture classification, and the GUI. They used a bluetooth connected glove, which is better than a wire connection, but still loses the mobility of this application somewhat, as carrying around a glove is cumbersome.
+Seymour et al. [<a href="literature_review_anna.html#ref18">18</a>] implemented an Android sign language recognition using glove based input, and achieved an accuracy of 99%. The design of this application is loosely divided into data acquisition, gesture classification, and the GUI. They used a bluetooth connected glove, which is better than a wire connection, but still loses the mobility of this application somewhat, as carrying around a glove is cumbersome.
 
                     </p>
                     <p>
-A generic system for sign language recognition was developed by Trigueiros et al. \cite{trigueiros2014generic}. Trigueiros identified the necessity of using separate classification schemes for static and dynamic gestures and proposed three modules: a pre-processing module, a static gesture module, and a dynamic gesture module. The pre-processing module will have limited usability for Leap data, as a lot of that is performed by the Leap software. However, this is where some of the shortcomings of Leap software can be rectified, using some of the suggestions from Potter et al. \cite{potter2013leap}, for example, inferring that two fingertips touched when the fingers disappear after coming closer together. The separation of classification of static and dynamic gestures allows an application to make use of the best algorithms for each case, as found by Cheng et al.
+A generic system for sign language recognition was developed by Trigueiros et al. [<a href="literature_review_anna.html#ref21">21</a>]. Trigueiros identified the necessity of using separate classification schemes for static and dynamic gestures and proposed three modules: a pre-processing module, a static gesture module, and a dynamic gesture module. The pre-processing module will have limited usability for Leap data, as a lot of that is performed by the Leap software. However, this is where some of the shortcomings of Leap software can be rectified, using some of the suggestions from Potter et al. [<a href="literature_review_anna.html#ref16">16</a>], for example, inferring that two fingertips touched when the fingers disappear after coming closer together. The separation of classification of static and dynamic gestures allows an application to make use of the best algorithms for each case, as found by Cheng et al.
 
                     </p>
                     <h4>Discussion and Recommendations</h4>
                     <p>
 
-While sure to be more effective, getting a large population to train a system does not seem practical, so more consideration is given to the classifiers and features which work best with smaller data sets. Out of these, the MLP classifier Mohandes et al. \cite{mohandes2014arabic} used returned the best accuracy of about 99%. However, the ArSL gestures used were all static, and MLP has been shown to recognise static gestures better than dynamic gestures \cite{cheng2016survey}. If an application is to be extended beyond fingerspelling, it needs to be well suited to dynamic gestures as well. The SVM and the kNN are well suited to both of these tasks \cite{cheng2016survey}. The SVM method is more versatile and seems to provide better results for this problem.  It is recommended to use the SVM for classification, and the sequential algorithm for feature selection explored by Marin et al. For the set up of the system, further testing of combinations of devices is recommended. However, for the set up of  the LMC, it is recommended to tilt the device up towards the user's palm rather than tilting the hand, to avoid uncontrolled interactions with features such as hand pitch, roll, and yaw.
+While sure to be more effective, getting a large population to train a system does not seem practical, so more consideration is given to the classifiers and features which work best with smaller data sets. Out of these, the MLP classifier Mohandes et al. [<a href="literature_review_anna.html#ref14">14</a>] used returned the best accuracy of about 99%. However, the ArSL gestures used were all static, and MLP has been shown to recognise static gestures better than dynamic gestures [<a href="literature_review_anna.html#ref4">4</a>]. If an application is to be extended beyond fingerspelling, it needs to be well suited to dynamic gestures as well. The SVM and the kNN are well suited to both of these tasks [<a href="literature_review_anna.html#ref4">4</a>]. The SVM method is more versatile and seems to provide better results for this problem.  It is recommended to use the SVM for classification, and the sequential algorithm for feature selection explored by Marin et al. For the set up of the system, further testing of combinations of devices is recommended. However, for the set up of  the LMC, it is recommended to tilt the device up towards the user's palm rather than tilting the hand, to avoid uncontrolled interactions with features such as hand pitch, roll, and yaw.
 
                     </p>
                     <h4>Conclusions</h4>
                     <p>
 
-In this paper, a comparison of sign language recognition methods using the Leap Motion Controller has been provided. The classification methods looked at included the kNN, SVM, NBC, DS, LDA, MLP, and Random Forests algorithms The two most promising classification methods were the MLP neural network and the SVM method. The SVM method is considered more appropriate for sign language applications due to its ability to handle both static and dynamic gestures \cite{cheng2016survey}. A sequential selection algorithm was successful \cite{marin2016hand} in identifying the best features to use for classification, and other papers have mostly used finger and hand positions, distances, and angles. The most promising combination of variables, across different sign languages seems to be the SVM with the sequential feature selection proposed by Marin et al.
+In this paper, a comparison of sign language recognition methods using the Leap Motion Controller has been provided. The classification methods looked at included the kNN, SVM, NBC, DS, LDA, MLP, and Random Forests algorithms The two most promising classification methods were the MLP neural network and the SVM method. The SVM method is considered more appropriate for sign language applications due to its ability to handle both static and dynamic gestures [<a href="literature_review_anna.html#ref4">4</a>]. A sequential selection algorithm was successful [<a href="literature_review_anna.html#ref13">13</a>] in identifying the best features to use for classification, and other papers have mostly used finger and hand positions, distances, and angles. The most promising combination of variables, across different sign languages seems to be the SVM with the sequential feature selection proposed by Marin et al.
 
                     </p>
                     <h4>References</h4>
-                    <p>
-
-
-                    </p>
+                    <ol>
+<li id="ref1"> Asa Ben-Hur and Jason Weston. 2010. A user's guide to support vector<br />machines. Data mining techniques for the life sciences (2010), 223&ndash;239.</li>
+<li id="ref2"> MS Bhuvan, D Vinay Rao, Siddharth Jain, TS Ashwin, Ram Mohana Reddy<br />Guddetti, and Sutej Pramod Kulgod. 2016. Detection and analysis model for<br />grammatical facial expressions in sign language. In Region 10 Symposium (TEN-SYMP), 2016 IEEE. IEEE, 155&ndash;160.</li>
+<li id="ref3"> Leo Breiman. 2001. Random forests. Machine learning 45, 1 (2001), 5.</li>
+<li id="ref4"> Hong Cheng, Lu Yang, and Zicheng Liu. 2016. Survey on 3D Hand Gesture<br />Recognition. IEEE Transactions on Circuits and Systems for Video Technology 26, 9 (2016), 1659&ndash;1673.</li>
+<li id="ref5"> Ching-Hua Chuan, Eric Regina, and Caroline Guardino. 2014. American Sign Language recognition using leap motion sensor. In Machine Learning and Applications (ICMLA), 2014 13th International Conference on. IEEE, 541&ndash;544.</li>
+<li id="ref6"> Andrew Clark and Deshendran Moodley. 2016. A System for a Hand Gesture-Manipulated Virtual Reality Environment. In Proceedings of the Annual Conference of the South African Institute of Computer Scientists and Information Technologists. ACM, 10.</li>
+<li id="ref7"> Walter H Delashmit and Michael T Manry. 2005. Recent developments in multi-layer perceptron neural networks. In Proceedings of the seventh Annual Memphis Area Engineering and Science Conference, MAESC. Citeseer.</li>
+<li id="ref8"> AS Elons, Menna Ahmed, Hwaidaa Shedid, and MF Tolba. 2014. Arabic sign language recognition using leap motion sensor. In Computer Engineering &amp; Systems (ICCES), 2014 9th International Conference on. IEEE, 368&ndash;373.</li>
+<li id="ref9"> Makiko Funasaka, Yu Ishikawa, Masami Takata, and Kazuki Joe. 2015. Sign Language Recognition using Leap Motion Controller. In Proceedings of the International Conference on Parallel and Distributed Processing Techniques and Applications (PDPTA). The Steering Committee of The World Congress in Computer Science, Computer Engineering and Applied Computing (WorldComp), 263.</li>
+<li id="ref10"> Matt Huenerfauth, Pengfei Lu, and Andrew Rosenberg. 2011. Evaluating importance of facial expression in american sign language and pidgin signed english animations. In The proceedings of the 13th international ACM SIGACCESS conference on Computers and accessibility. ACM, 99&ndash;106.</li>
+<li id="ref11"> Rajesh B Mapari and Govind Kharat. 2016. American Static Signs Recognition Using Leap Motion Sensor. In Proceedings of the Second International Conference on Information and Communication Technology for Competitive Strategies. ACM, 67.</li>
+<li id="ref12"> Giulio Marin, Fabio Dominio, and Pietro Zanuttigh. 2014. Hand gesture recognition with leap motion and kinect devices. In Image Processing (ICIP), 2014 IEEE International Conference on. IEEE, 1565&ndash;1569.</li>
+<li id="ref13"> Giulio Marin, Fabio Dominio, and Pietro Zanuttigh. 2016. Hand gesture recognition with jointly calibrated Leap Motion and depth sensor. Multimedia Tools and Applications 75, 22 (2016), 14991&ndash;15015.</li>
+<li id="ref14"> M Mohandes, S Aliyu, and M Deriche. 2014. Arabic sign language recognition using the leap motion controller. In Industrial Electronics (ISIE), 2014 IEEE 23rd International Symposium on. IEEE, 960&ndash;965.</li>
+<li id="ref15"> M Mohandes, S Aliyu, and M Deriche. 2015. Prototype Arabic Sign language recognition using multi-sensor data fusion of two leap motion controllers. In Systems, Signals &amp; Devices (SSD), 2015 12th International Multi-Conference on. IEEE, 1&ndash;6.</li>
+<li id="ref16"> Leigh Ellen Potter, Jake Araullo, and Lewis Carter. 2013. The leap motion controller: a view on sign language. In Proceedings of the 25th Australian computer-human interaction conference: augmentation, application, innovation, collaboration.ACM, 175&ndash;178.</li>
+<li id="ref17"> Luis Quesada, Gustavo L&oacute;pez, and Luis Guerrero. 2017. Automatic recognition of the American sign language fingerspelling alphabet to assist people living with speech or hearing impairments. Journal of Ambient Intelligence and Humanized Computing (2017), 1&ndash;11.</li>
+<li id="ref18"> Michael Seymour and Mohohlo T&scaron;oeu. 2015. A mobile application for South African Sign Language (SASL) recognition. In AFRICON, 2015. IEEE, 1&ndash;5.</li>
+<li id="ref19"> Merkourios Simos and Nikolaos Nikolaidis. 2016. Greek sign language alphabet recognition using the leap motion device. In Proceedings of the 9th Hellenic Conference on Artificial Intelligence. ACM, 34.</li>
+<li id="ref20"> Paulo Trigueiros, Fernando Ribeiro, and Luis Paulo Reis. 2012. A comparison of machine learning algorithms applied to hand gesture recognition. In Information Systems and Technologies (CISTI), 2012 7th Iberian Conference on. IEEE, 1&ndash;6.</li>
+<li id="ref21"> Paulo Trigueiros, Fernando Ribeiro, and Luis Paulo Reis. 2014. Generic system for human-computer gesture interaction. In Autonomous Robot Systems and Competitions (ICARSC), 2014 IEEE International Conference on. IEEE, 175&ndash;180.</li>
+<li id="ref22"> Ulrich Von Agris, Moritz Knorr, and Karl-Friedrich Kraiss. 2008. The significance of facial features for automatic sign language recognition. In Automatic Face &amp; Gesture Recognition, 2008. FG&rsquo;08. 8th IEEE International Conference on. IEEE, 1&ndash;6.</li>
+<li id="ref23"> Jihai Zhang, Wengang Zhou, Chao Xie, Junfu Pu, and Houqiang Li. 2016. Chinese sign language recognition with adaptive HMM. In Multimedia and Expo (ICME), 2016 IEEE International Conference on. IEEE, 1&ndash;6.</li>
+</ol>
 
 
                 </div>
