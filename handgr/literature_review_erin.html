@@ -265,6 +265,145 @@
                 <p>
                     One of the shortcomings of the Myo is that one cannot control from which muscles the EMG sensors receive input from. As demonstrated in [<a href="literature_review_erin.html#8">8</a>] and [<a href="literature_review_erin.html#11">11</a>] (see Table 1), the control of this variable can mean that with fewer sensors a study can achieve results comparable with studies which used more, such as <a href="literature_review_erin.html#9">[9</a>, <a href="literature_review_erin.html#19">19</a>] and [<a href="literature_review_erin.html#26">26</a>]. Studies with the Myo have only been able to enforce its general placement, specifically the forearm [<a href="literature_review_erin.html#1">1</a>, <a href="literature_review_erin.html#14">14</a>, <a href="literature_review_erin.html#21">21</a>, <a href="literature_review_erin.html#22">22</a>]. However, this limitation does not seem a serious drawback, as a study with similar technology achieved a 95% accuracy rate for recognition of Thai sign language alphabet gestures [<a href="literature_review_erin.html#3">3</a>]. Accuracy rate refers to the the percentage of gestures performed which are correctly classified. The only study with the Myo which produced poor results is [<a href="literature_review_erin.html#1">1</a>]. This is also one of two studies which made use of supervised vector machines (SVMs) [<a href="literature_review_erin.html#1">1</a>, <a href="literature_review_erin.html#19">19</a>]. Both studies obtained lower accuracy rates than the other studies reviewed here. The key to replicating these high accuracy rates therefore appears to lie within the combination of data pre-processing and segmentation, feature extraction and classifiers used.
                 </p>
+                <h3 class="text-center">
+                	<font size="4">
+                		<strong>
+                			Table 1. A comparison between the results obtained by different studies based on the hardware they employed
+                		</strong>
+                	</font>
+                </h3>
+                <table class="table" style="font-size: 15px">
+                	<thead>
+                		<tr>
+                			<th></th>
+                			<th>Custom design/ commercially available</th>
+                			<th>No. EMG sensors</th>
+                			<th>Muscles</th>
+                			<th>IMU sensors</th>
+                			<th>Results</th>
+                		</tr>
+                	</thead>
+                	<tbody>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#1">1</a>]</td>
+                			<td>Commercially available: Myo</td>
+                			<td>8</td>
+                			<td>N/A</td>
+                			<td>3D ACC<br>3D gyro<br>MM</td>
+                			<td>Low accuracy rates for fine gestures.<br>
+                				Potential for dynamic gestures.</td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#3">3</a>]</td>
+                			<td>Commercially available: TMS porti</td>
+                			<td>8</td>
+                			<td>N/A</td>
+                			<td>N/A</td>
+                			<td><strong>95</strong>% accuracy</td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#8">8</a>]</td>
+                			<td>Custom design</td>
+                			<td>2</td>
+                			<td>M. extensor indecis<br>
+								M. extensor pollicis brevis<br>
+								M. extensor pollicis longus<br>
+								M. abductor pollicis longus<br>
+								M. extensor digitiquinti proprius<br>
+								M. digitorum communis<br>
+								M. extensor carpi ulnaris</td>
+                			<td>Two 2D ACCs</td>
+                			<td>Improved by <strong>5</strong>-<strong>10</strong>% when including IMU sensors.</td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#9">9</a>]</td>
+                			<td>Custom design</td>
+                			<td>16</td>
+                			<td>M. extensor digitorium communis<br>
+								M. extensor digiti minimi<br>
+								M. extensor pollicis brevis<br>
+								M. flexor digitorum profundus<br>
+								M. flexor digitorum superficialis<br></td>
+                			<td>N/A</td>
+                			<td><strong>97.8</strong>% session-independent accuracy.
+                				<strong>74.3</strong>% user-independent accuracy.</td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#10">10</a>]</td>
+                			<td>Custom design</td>
+                			<td>4</td>
+                			<td>Not given</td>
+                			<td>3D ACC<br>
+                				Gyro</td>
+                			<td><strong>92.6</strong>% accuracy (air gestures).<br>
+                				<strong>88.8%</strong>% accuracy (surface gestures).</td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#11">11</a>]</td>
+                			<td>Custom design</td>
+                			<td>2</td>
+                			<td></td>
+                			<td>N/A</td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#12">12</a>]</td>
+                			<td>Custom design</td>
+                			<td>8</td>
+                			<td>Not given</td>
+                			<td></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#13">13</a>]</td>
+                			<td>Custom design</td>
+                			<td>4</td>
+                			<td>Not given</td>
+                			<td></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#14">14</a>]</td>
+                			<td>Commercially available: Myo</td>
+                			<td>8</td>
+                			<td>N/A</td>
+                			<td></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#19">19</a>]</td>
+                			<td>Custom design</td>
+                			<td>4</td>
+                			<td></td>
+                			<td>N/A</td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#21">21</a>]</td>
+                			<td>Commercially available: Myo</td>
+                			<td>8</td>
+                			<td>N/A</td>
+                			<td></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#22">22</a>]</td>
+                			<td>Commercially available: Myo</td>
+                			<td>8</td>
+                			<td>N/A</td>
+                			<td></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td>[<a href="literature_review_erin.html#26">26</a>]</td>
+                			<td>Custom design</td>
+                			<td>5</td>
+                			<td></td>
+                			<td></td>
+                			<td></td>
+                		</tr>
+                	</tbody>
+                </table>
                 <h2 id="data-processing" class="intro-text">
                     <font size="5">
                         <strong>2.2</strong> Data pre-processing, segmentation and feature extraction
