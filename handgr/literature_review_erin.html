@@ -34,163 +34,27 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
                         <h1>Using the Myo to recognise the South African Sign Language alphabet</h1>
-                        <h2 class="subheading">Literature review</h2>
-                        <span class="meta">Posted by <a href="#">Erin Versfeld</a> on 11 July, 2017</span>
+                        <h2 class="subheading">Literature Review</h2>
+                        <span class="meta">Posted by <a href="about.html">Erin Versfeld</a>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <style>
-        .affix {
-            top:0;
-        }
-        .affix + .container {
-            padding-top: 70px;
-        }
-        .background-color {
-            background-color: rgb(30,144,255,0.5);
-        }
-        .fill-width.dropdown > .collapse-menu > li > a > font{
-           white-space: normal; 
-        }
-        .left {
-            overflow: hidden;
-            min-height: 50px;
-            width: 200px;
-            float: left;
-        }
-        .right {
-            float: right;
-            width: 1300px;
-            min-height: 50px;
-            margin-right: 200px;
-            float: right;
-        }
-    </style>
+
     <!-- Post Content -->
-    <div class="container" style="width: 100%">
-            <div class="left">
-                <nav id="myScrollspy">
-                    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="197">
-                        <h3 class="section-heading"><u>OVERVIEW</u></h3>
-                        <br>
-                        <li>                             
-                            <h4>
-                                <a href="literature_review_erin.html#abstract">
-                                    Abstract
-                                </a>
-                            </h4>
-                        </li>
-                        <li>
-                            <h4>
-                                <a href="literature_review_erin.html#introduction">
-                                    1. Introduction
-                                </a>
-                            </h4>
-                        </li>
-                        <li>
-                            <h4>
-                                <a role="button" href="literature_review_erin.html#technical-design" aria-haspop="true" aria-expanded="false">2. Technical Design </a>
-                                <a href="#collapse-technical-design" class="dropdown-toggle" data-toggle="collapse" role="button" aria-haspop="true" aria-expanded="false">
-                                        <span class="fa fa-caret-down"></span>
-                                </a>
-                            </h4>
-                            <ul style="list-style-type:none" id="collapse-technical-design" class="collapse-menu collapse">
-                                <li role="presentation">
-                                    <a role="menu-item" tabindex="-1" href="literature_review_erin.html#hardware">
-                                        <h4>
-                                            2.1 Hardware
-                                        </h4>
-                                    </a>
-                                </li>
-                                <li role="presentation">
-                                    <a role="menu-item" tabindex="-1" href="literature_review_erin.html#data-processing">
-                                        <h4>
-                                            2.2 Data pre-processing,<br/> &nbsp &nbsp &nbsp segementation and<br/> &nbsp &nbsp &nbsp feature extraction
-                                        </h4>
-                                    </a>
-                                </li>
-                                <li role="presentation">
-                                    <a role="menu-item" tabindex="-1" href="literature_review_erin.html#gesture-classifiers">
-                                        <h4>
-                                            2.3 Gesture classifiers
-                                        </h4>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <h4>
-                                <a role="button" href="literature_review_erin.html#experimental-design" aria-haspop="true" aria-expanded="false">
-                                    3. Experimental Design </a>
-                                <a href="#collapse-experimental-design" class="dropdown-toggle" data-toggle="collapse" role="button" aria-haspop="true" aria-expanded="false"><span class="fa fa-caret-down"></span></a>
-                            </h4>
-                            <ul style="list-style-type:none;" id="collapse-experimental-design" class="collapse-menu collapse">
-                                <li role="presentation">
-                                    <a role="menu-item" tabindex="-1" href="literature_review_erin.html#sample-population">
-                                        <h4>
-                                            3.1 Sample population
-                                        </h4>
-                                    </a>
-                                </li>
-                                <li role="presentation">
-                                    <a role="menu-item" tabindex="-1" href="literature_review_erin.html#gestures">
-                                        <h4>
-                                            3.2 Gestures
-                                        </h4>
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a role="button" href="literature_review_erin.html#evaluation" aria-haspop="true" aria-expanded="false">
-                                        <h4>
-                                            3.3 Evaluation
-                                            </a>
-                                            <a href="#collapse-experimental-design-evaluation" class="dropdown-toggle" data-toggle="collapse" role="button" aria-haspop="true" aria-expanded="false">
-                                                <span class="fa fa-caret-down"></span>
-                                            </a>
-                                        </h4>
-                                    </a>
-                                    <ul style="list-style-type:none" id="collapse-experimental-design-evaluation" class="collapse-menu collapse">
-                                        <li role="presentation">
-                                        <a role="menu-item" tabindex="-1" href="literature_review_erin.html#qualitative">
-                                                <h5>
-                                                    3.3.1 Qualitative
-                                                </h5>
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menu-item" tabindex="-1" href="literature_review_erin.html#quantitative">
-                                                <h5>
-                                                    3.3.1 Quantitative
-                                                </h5>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h4>
-                                <a href="literature_review_erin.html#conclusion">
-                                    4. Conclusion
-                                </a>
-                            </h4>
-                        </li>
-                        <li>
-                            <h4>
-                                <a href="literature_review_erin.html#references">
-                                    5. References
-                                </a>
-                            </h4>
-                        </li>
-                        <h4>
-                            <a href="supporting/literature_review_erin.pdf">
-                                Download &nbsp<span class="fa fa-download"></span>
-                            </a>
-                        </h4>
+    <article>
+        <div class="container">
+            <div class="row">
+                <nav class="col-sm-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <h3 class="section-heading">Resources</h3>
+                        <h3>Literature Review</h3>
+                        <li><a href="supporting/literature_review_erin.pdf">Using the Myo to recognise the South African Sign Language alphabet <i class="fa fa-download" aria-hidden="true"></i></a></li>
                     </ul>
                 </nav>
+<<<<<<< HEAD
             </div>
             <div class="right" style="position: relative;">
                 <hr style="border-color: rgb(0, 153, 153, 0.4)">
@@ -602,10 +466,14 @@
                         </a>
                     </li>
                 </ol>
+=======
+                <!-- <div class="col-sm-9"> -->
+                    <embed src="supporting/literature_review_erin.pdf" type="application/pdf"  width="800px" height="2100px" />
+                <!-- </div> -->
+>>>>>>> 3bc7e3a72729ae60d4bfc6b503770b40b5ea0db8
             </div>
         </div>
-        
-    <hr>
+    </article>
 
     <!-- Footer -->   
     <div id="footer"></div>

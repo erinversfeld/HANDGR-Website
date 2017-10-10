@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HANDGR Blog</title>
+    <title>HANDGR Blog - About</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
-    <script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script>
         $(function(){
             $("#navbar").load("navbar.html");
             $("#headLink").load("head_link.html");
@@ -25,17 +26,19 @@
 </head>
 
 <body>
+
     <div id="navbar"></div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>HANDGR</h1>
-                        <hr class="small">
-                        <span class="subheading">Bringing us closer</span>
+                    <div class="page-heading">
+                        <h1 style="color: ">HANDGR</h1>
+                        <hr style="border-color: " class="small">
+                        <span class="subheading" style="color: "><p></p>Background, goals, and results</span>
                     </div>
                 </div>
             </div>
@@ -46,61 +49,60 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="progress_report_week_27.html">
-                        <h2 class="post-title">
-                            Project Progress Report: Week 27
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Open Evening
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="about.html">Erin Versfeld</a> on 8 October, 2017</p>
+            <div class="box">
+                <div class="col-lg-21">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Background</strong>
+                    </h2>
+                    <hr>
                 </div>
-                <div class="post-preview">
-                    <a href="progress_report_week_26.html">
-                        <h2 class="post-title">
-                            Project Progress Report: Week 26
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Finalising the project
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="about.html">Erin Versfeld</a> on 1 October, 2017</p>
+                <div class="box">
+                  <p>Over the last several years, the scene of the hand gesture recognition field has changed due to the emergence of several depth based devices, such as the Myo, the Microsoft Kinect, and the Leap Motion Controller. These devices have been successful in their intended use cases, but sign language recognition provides more of a challenge due to its complexity.</p>
+                  <p>There currently exists a communication barrier between the Deaf and hearing communities globally. Historically, this difference has produced some discord between the linguistic communities, resulting in the Deaf experiencing a reduced set of social opportunities.</p>
+                  <p>The project aims to explore how to build a tool for teaching South African Sign Language (SASL) to the hearing in South Africa. In particular this study will examine the ability of three gesture recognition devices in conjunction with various machine learning techniques to identify gestures from the SASL alphabet.</p>
+                  <p>The results of this study will inform future development of a tool for teaching SASL.</p>
                 </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="progress_report_week_25.html">
-                        <h2 class="post-title">
-                            Project Progress Report: Week 25
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Final drafts
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="about.html">Erin Versfeld</a> on 24 September, 2017</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="progress_report_week_24.html">
-                        <h2 class="post-title">
-                            Project Progress Report: Week 24
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Finalising the rubric
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="about.html">Erin Versfeld</a> on 17 September, 2017</p>
-                </div>
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="index_page_2.html">Older Posts &rarr;</a>
-                    </li>
-                </ul>
+                <div class="clearfix"></div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-21">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Goals</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="box">
+                  <p>- Investigate machine learning classifiers and their effectiveness in recognising SASL alphabet gestures</p>
+                  <p>- Obtain a large dataset of alphabet gestures, using the Kinect, the Leap, and the Myo devices</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-21">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Results</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="box">
+                  <p> Varied results were obtained. Support vector machines proved to be the most promising for both the Kinect and Leap devices. Future work should look into whether combinations of devices can boost low performances, such as that of the Myo. </p>
+                  <img class="img-responsive displayed" style="width: 500px" src="img/results.png" alt="">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
     </div>
+    <!-- /.container -->
 
     <hr>
 
